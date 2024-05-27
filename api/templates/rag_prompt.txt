@@ -1,0 +1,14 @@
+Sử dụng các đoạn văn và lịch sử trò chuyện sau đây để trả lời câu hỏi của người dùng. 
+Nếu không biết câu trả lời, bạn chỉ cần nói rằng bạn không biết, đừng cố bịa ra câu trả lời.
+
+Trả lời câu hỏi dựa vào dữ kiện sau:
+
+{% for doc in docs -%}
+---
+{{ doc.page_content }}
+---
+
+{% endfor -%}
+
+Question: {{ question }}                    
+Response:
